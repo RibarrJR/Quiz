@@ -1,0 +1,116 @@
+<div class="stepsdemo-content m-3">
+  <div [@popOverState]="stateQuestion1">
+    <p-card>
+      <ng-template pTemplate="title">
+        Primeira pergunta
+      </ng-template>
+      <ng-template pTemplate="subtitle">
+        Qual minha segunda comida preferida ??
+      </ng-template>
+      <ng-template pTemplate="content">
+        <div class="">
+
+        </div>
+
+      </ng-template>
+      <ng-template pTemplate="footer">
+        <div class="p-grid p-nogutter p-justify-end">
+          <p-button label="Sushi" (onClick)="validate(false)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+          <p-button label="Churrasco" (onClick)="validate(false)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+          <p-button label="Frutas" (onClick)="validate(false)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+          <p-button label="Lasanha" (onClick)="validate(true,1)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+        </div>
+      </ng-template>
+    </p-card>
+  </div>
+  <div [@popOverState]='stateQuestion2'>
+    <p-card>
+      <ng-template pTemplate="title">
+        Segunda pergunta
+      </ng-template>
+      <ng-template pTemplate="subtitle">
+        Qual o meu restaurante favorito ??
+      </ng-template>
+      <ng-template pTemplate="content">
+        <div class="">
+
+        </div>
+
+      </ng-template>
+      <ng-template pTemplate="footer">
+        <div class="p-grid p-nogutter p-justify-end">
+          <p-button label="Outback" (onClick)="validate(true,2)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+          <p-button label="Madero" (onClick)="validate(false,2)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+          <p-button label="Sakura" (onClick)="validate(false,2)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+          <p-button label="Burguer King" (onClick)="validate(false,2)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+        </div>
+      </ng-template>
+    </p-card>
+  </div>
+
+  <div [@popOverState]='stateQuestion3'>
+    <p-card>
+      <ng-template pTemplate="title">
+        Terceira pergunta
+      </ng-template>
+      <ng-template pTemplate="subtitle">
+        O que minha mãe me implorou para parar de fazer ??
+      </ng-template>
+      <ng-template pTemplate="content">
+        <div class="">
+
+        </div>
+
+      </ng-template>
+      <ng-template pTemplate="footer">
+        <div class="p-grid p-nogutter p-justify-end">
+          <p-button label="Não limpar a casa" (onClick)="validate(false,3)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+          <p-button label="Tomar energético" (onClick)="validate(true,3)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+          <p-button label="Visitar ela na quarentena" (onClick)="validate(false,3)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+          <p-button label="Não dormir direito" (onClick)="validate(false,3)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+        </div>
+      </ng-template>
+    </p-card>
+  </div>
+
+  <div [@popOverState]='stateQuestion4'>
+    <p-card>
+      <ng-template pTemplate="title">
+        Quarta pergunta
+      </ng-template>
+      <ng-template pTemplate="subtitle">
+       Que porcaria eu sou muito viciado ??
+      </ng-template>
+      <ng-template pTemplate="content">
+        <div class="">
+
+        </div>
+
+      </ng-template>
+      <ng-template pTemplate="footer">
+        <div class="p-grid p-nogutter p-justify-end">
+          <p-button label="Salgadinhos" (onClick)="validate(false,4)" icon="pi pi-angle-right"
+          styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+          <p-button label="Bis" (onClick)="validate(false,4)" icon="pi pi-angle-right"
+          styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+          <p-button label="Balas de gelatina" (onClick)="validate(true,4)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+          <p-button label="Barra de Chocolate" (onClick)="validate(false,4)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+        </div>
+      </ng-template>
+    </p-card>
+  </div>
+</div>

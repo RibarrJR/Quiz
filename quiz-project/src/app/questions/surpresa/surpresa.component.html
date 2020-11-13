@@ -1,0 +1,114 @@
+<div class="stepsdemo-content m-3">
+  <div [@popOverState]="stateQuestion1">
+    <p-card>
+      <ng-template pTemplate="title">
+        Primeira pergunta
+      </ng-template>
+      <ng-template pTemplate="subtitle">
+        O que hoje em dia pra mim é muito dificil viver sem  ??
+      </ng-template>
+      <ng-template pTemplate="content">
+        <div class="">
+          <span *ngIf="question2"> Todas estão certas !</span>
+        </div>
+
+      </ng-template>
+      <ng-template pTemplate="footer">
+        <div class="p-grid p-nogutter p-justify-end">
+          <p-button label="Sentir teu cheiro 🥰" (onClick)="validate(true,1)" icon="pi pi-angle-right"
+          styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+          <p-button label="Ver teu sorriso 🤩" (onClick)="validate(true,1)" icon="pi pi-angle-right"
+          styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+          <p-button label="Teus carinhos😍" (onClick)="validate(true,1)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+          <p-button label="Teu beijo 😘" (onClick)="validate(true,1)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+        </div>
+      </ng-template>
+    </p-card>
+  </div>
+  <div [@popOverState]='stateQuestion2'>
+    <p-card>
+      <ng-template pTemplate="title">
+        Segunda pergunta
+      </ng-template>
+      <ng-template pTemplate="subtitle">
+       O que acontece quando vejo que recebi uma mensagem tua ??
+      </ng-template>
+      <ng-template pTemplate="content">
+        <div class="">
+          <span *ngIf="question3"> Todas estão certas !</span>
+        </div>
+
+      </ng-template>
+      <ng-template pTemplate="footer">
+        <div class="p-grid p-nogutter p-justify-end">
+          <p-button label="Meu coração se enche de felicidade ❤" (onClick)="validate(true,2)" icon="pi pi-angle-right" styleClass="p-button-outlined m-2"
+          iconPos="right"></p-button>
+          <p-button label="Fico rindo igual bobo resto do dia 😂" (onClick)="validate(true,2)" icon="pi pi-angle-right" styleClass="p-button-outlined m-2"
+            iconPos="right"></p-button>
+          <p-button label="Acaba com qualquer tristeza que eu tiver no dia !😁" (onClick)="validate(true,2)" icon="pi pi-angle-right" styleClass="p-button-outlined m-2"
+            iconPos="right"></p-button>
+          <p-button label="Pensar no quanto eu tenho sorte de no meio desse caos todo que ta o mundo, ter encontrado alguém tão especial como você !😉" (onClick)="validate(true,2)" icon="pi pi-angle-right" styleClass="p-button-outlined m-2"
+            iconPos="right"></p-button>
+        </div>
+      </ng-template>
+    </p-card>
+  </div>
+
+  <div [@popOverState]='stateQuestion3'>
+    <p-card>
+      <ng-template pTemplate="title">
+        Terceira pergunta
+      </ng-template>
+      <ng-template pTemplate="subtitle">
+      O quanto eu apaixonado que estou por ti ??
+      </ng-template>
+      <ng-template pTemplate="content">
+        <div class="">
+          <span *ngIf="question4"> Todas estão certas !</span>
+        </div>
+      </ng-template>
+      <ng-template pTemplate="footer">
+        <div class="p-grid p-nogutter p-justify-end">
+          <p-button label="Mil milhões 🤓💯" (onClick)="validate(true,3)" icon="pi pi-angle-right" styleClass="p-button-outlined m-2"
+            iconPos="right"></p-button>
+          <p-button label="Completamente 😊" (onClick)="validate(true,3)" icon="pi pi-angle-right" styleClass="p-button-outlined m-2"
+            iconPos="right"></p-button>
+          <p-button label="Totalmente 🤗" (onClick)="validate(true,3)" icon="pi pi-angle-right" styleClass="p-button-outlined m-2"
+            iconPos="right"></p-button>
+          <p-button label="Mais do que a fofura do Clovis 🐶" (onClick)="validate(true,3)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+        </div>
+      </ng-template>
+    </p-card>
+  </div>
+
+  <div [@popOverState]='stateQuestion4'>
+    <p-card>
+      <ng-template pTemplate="title">
+        Quarta pergunta
+      </ng-template>
+      <ng-template pTemplate="subtitle">
+      Imagino que aqui você ja saiba onde isso vai levar ??
+      </ng-template>
+      <ng-template pTemplate="content">
+        <div class="">
+
+        </div>
+      </ng-template>
+      <ng-template pTemplate="footer">
+        <div class="p-grid p-nogutter p-justify-end">
+          <p-button label="Sim" (onClick)="validate(false,4)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+          <p-button label="Não" (onClick)="validate(false,4)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+          <p-button label="Talvez" (onClick)="validate(true,4)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+          <p-button label="Acho que não quero saber" (onClick)="validate(false,4)" icon="pi pi-angle-right"
+            styleClass="p-button-outlined m-2" iconPos="right"></p-button>
+        </div>
+      </ng-template>
+    </p-card>
+  </div>
+</div>
